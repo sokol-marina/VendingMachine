@@ -1,0 +1,63 @@
+/* Global Styles
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #955858;
+  color: #333;
+} */
+
+/* App Container */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Vending Machine List Styling */
+.vending-machine {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.vending-item {
+  display: block;
+  /* Makes the entire item clickable */
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  /* Removes link underline */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 12px 36px 12px 36px;
+}
+
+.vending-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.vending-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.vending-item h3 {
+  margin: 10px 0;
+  font-size: 1.4rem;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.vending-item:hover h3 {
+  color: #ff6347;
+}
